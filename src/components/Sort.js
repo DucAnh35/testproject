@@ -3,6 +3,9 @@ import React, { Component } from 'react';
 
 
 class Sort extends Component {
+  onSort = () =>{
+    this.props.onSort(this.props.tasks.id);
+  }
   render() {
     return (
      
@@ -13,7 +16,8 @@ class Sort extends Component {
                   className="btn btn-primary dropdow-toggle"
                   id = "dropdownmMenu1"
                   data-toggle="dropdown"
-                  aria-haspopup="true" >
+                  aria-haspopup="true"
+                  onClick = {this.onSort}>
                   Sắp xếp 
                   <span className="fa fa-caret-square-o-down ml-5"></span>
             </button>
