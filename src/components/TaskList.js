@@ -12,6 +12,7 @@ class TaskList extends Component {
                         onUpdateStatus = {this.props.onUpdateStatus}
                         onDelete = {this.props.onDelete}
                         onUpdate = {this.props.onUpdate}
+                        
                         />
     });
     return (
@@ -41,7 +42,7 @@ class TaskList extends Component {
                           <td>
                             <select
                                   className="form-control"
-                                  name="filterstatus"
+                                  name="filterstatus"                              
                             >
                               <option value={-1}>Tất Cả</option>
                               <option value={0}>Ẩn</option>

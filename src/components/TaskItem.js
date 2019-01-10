@@ -12,6 +12,7 @@ class TaskItem extends Component {
     onUpdate = () =>{
         this.props.onUpdate(this.props.tasks.id);
     }
+    
   render() {
     var {tasks, index} = this.props;
     return (
