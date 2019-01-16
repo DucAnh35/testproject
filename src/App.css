@@ -59,3 +59,13 @@
     margin: 0 0 0 10px;
     display: inline-block;
 }
+
+.taskadd{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+.close {
+    margin: -30px 5px;
+}

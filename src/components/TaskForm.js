@@ -61,14 +61,22 @@ class TaskForm extends Component {
         return (
 
             <div className="panel panel-warning">
-                <div className="panel-heading">
+                <div className="taskadd">
+                     {id !== ''
+                            ? 'Cập nhật công việc'
+                            : 'Thêm công việc'}
+                </div>
+                <button type="button" className="close" aria-label="Close">
+                    <span aria-hidden="true" onClick={this.onCloseForm}>×</span>
+                </button>
+                {/* <div className="panel-heading">
                     <h3 className="panel-title">
                         {id !== ''
                             ? 'Cập nhật công việc'
                             : 'Thêm công việc'}
                         <span className="fa fa-times-circle text-right" onClick={this.onCloseForm}></span>
                     </h3>
-                </div>
+                </div> */}
                 <div className="panel-body">
                     <form onSubmit={this.onSubmit}>
 
